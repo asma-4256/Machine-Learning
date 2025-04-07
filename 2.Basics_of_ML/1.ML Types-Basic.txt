@@ -1,4 +1,4 @@
-ML :
+Machine Learning :
 ML is branch of AI, a technique that learn from data by itself & without being explicitly programmed.
 
 Types of ML:
