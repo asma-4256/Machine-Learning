@@ -1,0 +1,35 @@
+Math is the backbone of ML, and it’s exciting to see how concepts like:
+    🔸 Linear Algebra
+    🔸 Calculus
+    🔸 Probability & Statistics
+    play a crucial role in building and optimizing models.
+
+LINEAR ALGEBRA:-
+
+🔹 Vector operations:
+    Addition
+    Subtraction
+    Scalar Multiplication
+    🔹 Visualized vectors and their operations using Matplotlib and Seaborn for better understanding.
+
+🔹 Dot Product: Calculating the similarity or alignment between two vectors.
+🔹 Cross Product: Finding a vector perpendicular to two given vectors (useful in 3D spaces).
+🔹 Projection: Projecting one vector onto another to understand components along a direction.
+
+I implemented these operations using NumPy, which made the calculations smooth and efficient.
+
+
+
+🔹 Creating MATRIXES using NumPy, including:
+
+    Matrices with random values
+    Matrices with random integers
+    Zero matrices and ones matrices
+    Identity matrices using eye()
+    
+🔹 Matrix Transpose: Understanding how to flip rows and columns for operations like dot products and transformations.
+
+🔹 Matrix Addition and Subtraction: Combining or comparing data stored in matrices.
+🔹 Matrix Multiplication: Understanding how two matrices interact and generate a new one.
+🔹 Scalar Multiplication: Scaling all elements of a matrix by a constant.
+🔹 Element-wise Multiplication: Multiplying matrices element by element (useful for certain ML operations).

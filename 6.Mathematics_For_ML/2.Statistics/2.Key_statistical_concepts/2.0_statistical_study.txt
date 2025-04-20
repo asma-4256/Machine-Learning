@@ -1,0 +1,16 @@
+Types of Statstical Study:
+
+🔹 Sample Study:
+
+◽Study a small group (sample) to understand the entire population.
+ ◽Saves time and resources when working with large populations.
+
+🔹 Observational Study:
+
+◽Just observe and collect data without changing anything.
+◽Useful when we can’t or don’t want to interfere, like studying natural behavior.
+
+🔹 Experimental Study:
+
+◽Change some factors (variables) to see the effects.
+◽Often used to test ideas or treatments, like in clinical trials.
