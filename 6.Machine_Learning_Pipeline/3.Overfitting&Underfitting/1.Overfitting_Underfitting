@@ -1,0 +1,44 @@
+𝐎𝐯𝐞𝐫𝐟𝐢𝐭𝐭𝐢𝐧𝐠
+📌 What is Overfitting?
+  When a model performs exceptionally well on training data but poorly on test data.
+
+📌 Causes:
+  Model complexity, insufficient training data, noise or irrelevant features.
+
+📌 Prevention:
+  Use more data, simplify the model, apply regularization, use dropout, and perform cross-validation.
+
+𝐔𝐧𝐝𝐞𝐫𝐟𝐢𝐭𝐭𝐢𝐧𝐠
+📌 What is Underfitting?
+  When a model performs poorly on both training and test data because it is too simple to capture the patterns in the data.
+
+📌 Causes:
+  Model is too simple, insufficient training time, or incorrect features used.
+
+📌 Prevention:
+  Increase model complexity, train for a longer time, and select relevant features.
+
+  
+
+Bias-Variance Tradeoff in machine learning:
+
+🔹 What are Bias and Variance?
+
+        Bias: The error due to overly simplistic models, leading to underfitting.
+        Variance: The error due to overly complex models, leading to overfitting.
+
+
+🔹 How do Bias and Variance relate to ML?
+
+        High bias = underfitting (model misses key patterns).
+        High variance = overfitting (model captures noise instead of patterns).
+
+
+🔹 Techniques to Improve the Bias-Variance Tradeoff:
+
+    📌Use cross-validation to optimize model complexity.
+    📌Select the right algorithm for the problem.
+    📌Regularization techniques like L1 or L2 to balance model complexity.
+    📌Collect more data to reduce variance.
+
+

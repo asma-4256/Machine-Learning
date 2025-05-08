@@ -1,0 +1,79 @@
+ Parameters in Machine Learning:
+
+🔹 Types of Parameters:
+
+Model Parameters:
+
+    These are learned from the data during training, such as:
+    𝐖𝐞𝐢𝐠𝐡𝐭𝐬: Determine the importance of features.
+    𝐁𝐢𝐚𝐬: Adjusts the output along with the weights to better fit the data.
+
+ 🔹 Weights:
+
+    📌Define how much influence an input has on the output.
+    📌Adjusted during training to minimize the loss function and improve predictions.
+
+
+ 🔹 Bias:
+
+    📌An offset value added to the model.
+    📌Helps the model make accurate predictions by shifting the activation function.
+
+Hyperparameters:
+
+    These are set before training and control the learning process, such as:
+    𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐑𝐚𝐭𝐞: Determines how quickly a model learns.
+    𝐍𝐮𝐦𝐛𝐞𝐫 𝐨𝐟 𝐄𝐩𝐨𝐜𝐡𝐬: Specifies how many times the model will see the entire dataset during training.
+
+ 📌 Learning Rate:
+
+    Controls how quickly the model learns.
+
+ 📌 Number of Epochs:
+
+    Determines how many times the model will see the entire dataset during training.
+
+Methods of Hyper Tuning:
+
+📌GridSearchCV 🔍
+
+    Tries all possible hyperparameter combinations.
+
+    Best for smaller datasets with fewer hyperparameters.
+
+    Downside? Computationally expensive for large datasets.
+
+📌RandomizedSearchCV 🎯
+
+    Randomly selects a subset of hyperparameter combinations.
+
+    Best for large datasets where exhaustive search is impractical.
+
+    Faster & efficient, with a good chance of finding optimal values.
+
+✨Which one to choose?
+
+        ✅If speed matters → Use RandomizedSearchCV
+
+        ✅If accuracy is top priority → Use GridSearchCV (for smaller models)
+
+
+        
+
+🔄 Model Training Steps :
+
+        1.Preprocess Data – Clean, encode, scale, and split.
+
+        2.Feed Data – Pass inputs and labels into the model.
+
+        3.Forward Pass – Model makes predictions.
+
+        4.Loss Calculation – Compare predictions with actual values.
+
+        5.Backpropagation – Compute gradients (errors).
+
+        6.Weight Update – Adjust model weights using optimization (e.g., gradient descent).
+
+        7.Repeat – Do this for many epochs until loss decreases.
+
+        8.Validate – Check performance on validation data to avoid overfitting.

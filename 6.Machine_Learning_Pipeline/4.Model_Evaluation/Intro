@@ -1,0 +1,32 @@
+Model Evaluation Metrics in Classification!
+
+   Evaluating the performance of a classification model using some important metrics. Here's a quick breakdown:
+
+📌Confusion Matrix
+    A 2x2 table that shows:
+
+    True Positives (TP): Correctly predicted positives
+
+    True Negatives (TN): Correctly predicted negatives
+
+    False Positives (FP): Incorrectly predicted positives
+
+    False Negatives (FN): Incorrectly predicted negatives
+
+📌Precision:
+
+    Tells us how many of the predicted positives were actually correct.
+    Precision = TP / (TP + FP)
+    Useful when false positives are costly.
+    Example: Predicting whether an email is spam.
+
+📌Recall (Sensitivity)
+    Tells us how many actual positives were correctly identified.
+    Recall = TP / (TP + FN)
+    Important when missing positives is risky.
+    Example: Detecting a disease in medical diagnosis.
+
+📌F1 Score
+    A balance between Precision & Recall
+    F1 = 2 * (Precision * Recall) / (Precision + Recall)
+    Great when you need a trade-off between Precision and Recall.

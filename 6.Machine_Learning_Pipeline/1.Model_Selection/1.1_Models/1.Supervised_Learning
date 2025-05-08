@@ -1,0 +1,144 @@
+Linear Regression :
+    Linear Regression, a fundamental ML model used for predicting continuous values.
+
+   📌 Key Takeaways:
+    🔹 Example: Predicting a person’s salary based on experience.
+    🔹 Concept: Drawing a straight line that best fits the data points.
+    🔹 Visualization: Plotted the data and regression line to understand the relationship between features.
+    🔹 Handles multiple features to make more accurate predictions.
+    🔹 Example: Predicting a house price based on size, location, and number of rooms.
+
+  🔹 In Linear Regression, we predict values using the equation y = mx + c, where:
+    m is the slope
+    c is the intercept
+
+  🔹 The Loss Function measures the difference between the actual values and predicted values.
+
+   📉 Example:
+    If we have actual values (y) and predicted values (ŷ), the Mean Squared Error (MSE) is:
+
+    MSE= 1/n ∑(y− y^ ) ^2
+    
+    This helps in adjusting the model parameters to minimize the error and get the best-fitting line!
+
+    ✅ Why is it important?
+    ✔️ Helps in finding the optimal line that best represents the data.
+    ✔️ Used in Gradient Descent to update weights & improve predictions.
+
+   Gradient Descent:-
+   📌 How Does It Work?
+    🔹 Step 1: Start with random values for m (slope) and c (intercept) in the equation y = mx + c.
+    🔹 Step 2: Compute the Loss Function (Mean Squared Error - MSE).
+    🔹 Step 3: Calculate the gradient (derivative) of the loss function to determine the direction of update.
+    🔹 Step 4: Update m and c using the formula:
+
+    m=m−α (∂j/∂m)
+    c=c−α (∂j/∂c)
+    
+    Where α (learning rate) controls the step size.
+
+    🔹 Step 5: Repeat until loss is minimized and the model finds the best-fitting line!
+
+
+  ✅ Why is Gradient Descent Important?
+    ✔️ Helps in optimizing model parameters to minimize error.
+    ✔️ Efficient for large datasets where direct computation isn't feasible.
+    ✔️ Essential for deep learning and complex models.
+
+  ✅ Advantages:
+
+    ✔️ Easy to implement & interpret.
+    ✔️ Performs well when the data has a linear relationship.
+
+  ❌ Disadvantages:
+
+    ⚠️ Not suitable for non-linear data.
+    ⚠️ Can underfit if important variables are missing.
+    ⚠️ Sensitive to outliers, which can impact predictions.
+
+
+Logistic Regression:-
+
+ 🔹 What is Logistic Regression?
+      A supervised learning algorithm used for binary classification (e.g., spam vs. not spam, disease vs. no disease)
+     Uses the Sigmoid Function to map predictions between 0 and 1
+
+  🔍 Key Learnings:
+    📌 Unlike Linear Regression, Logistic Regression predicts probabilities
+    📌 The Sigmoid Function helps convert linear outputs into probabilities
+    📌 Common applications: Email spam detection, medical diagnosis, fraud detection
+
+  📈 Sigmoid Function Formula:
+
+            σ(z)= 1/(1+e ^−z)
+ 
+        where z = wx + b (weighted sum of inputs).
+
+    📌 If z (wx + b) is a large positive number, the predicted value ŷ → 1 (Class 1).
+    📌 If z is a large negative number, the predicted value ŷ → 0 (Class 0).
+
+
+ 🔹 Why is Loss Function Important?
+    📌 It measures how well or poorly the model is performing.
+    📌 Helps in updating weights using Gradient Descent.
+
+    🔹 Loss Function in Logistic Regression:
+    Since Logistic Regression deals with classification, we use Log Loss (Binary Cross-Entropy) instead of Mean Squared Error.
+
+  📈 Formula for Log Loss:🔽
+        where:
+        ✅ y = Actual class (0 or 1)
+        ✅ ŷ = Predicted probability (between 0 and 1)
+
+  🔹 How It Works?
+    📌 If the actual label is 1, we minimize -log(ŷ).
+    📌 If the actual label is 0, we minimize -log(1-ŷ).
+    📌 The function penalizes wrong predictions more heavily, making it ideal for classification tasks!
+
+🔹 Optimization:
+    minimize Log Loss using Gradient Descent, updating weights to improve predictions.
+    𝐏𝐫𝐨𝐜𝐞𝐬𝐬:
+        🔹Calculate the gradient of the log loss with respect to the model’s weights.
+        🔹 Update the weights using:
+
+        w=w−α⋅gradient
+
+        🔹Iterate until convergence.
+        🔹Gradient Descent fine-tunes the model parameters step-by-step, making our binary classification tasks more accurate.
+
+💡 Key Insight:
+Unlike MSE (Mean Squared Error) in Linear Regression, Log Loss is best suited for classification since it focuses on probabilities.
+𝐎𝐛𝐣𝐞𝐜𝐭𝐢𝐯𝐞: Minimize the log loss (binary cross-entropy) to improve classification accuracy.
+
+
+Support Vector Machine:-
+
+    SVM finds the best boundary (hyperplane) that separates different classes of data with the maximum margin.
+
+  📌 How it works (for classification):
+    Plot the data points in n-dimensional space (where n = number of features).
+
+    SVM tries to find a hyperplane that best separates the classes.
+
+    The support vectors are the data points closest to the hyperplane, which directly influence the position and orientation of the hyperplane.
+
+    The goal is to maximize the margin, which is the distance between the hyperplane and the support vectors from both classes.
+  📉 Example:
+    If you want to classify emails as spam or not spam, SVM can draw a boundary that best separates these two categories based on features like keywords, frequency, etc.
+
+  🔧 Types of SVM:
+    Linear SVM: Used when data is linearly separable.
+
+    Non-Linear SVM: Uses kernel tricks (like RBF, polynomial, sigmoid) to map data into higher dimensions where it becomes linearly separable.
+
+  🛠️ Applications:
+    Face detection
+
+    Text classification
+
+    Handwriting recognition
+
+    Bioinformatics (e.g., cancer classification)
+
+
+

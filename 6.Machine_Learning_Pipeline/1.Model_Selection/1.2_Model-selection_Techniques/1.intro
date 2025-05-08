@@ -1,0 +1,22 @@
+🔹𝐌𝐨𝐝𝐞𝐥 𝐒𝐞𝐥𝐞𝐜𝐭𝐢𝐨𝐧:
+
+    📌Choosing the right model depends on:
+    The specific task (classification, regression, etc.).
+    📌The model's nature and complexity.
+    The characteristics of the dataset being used.
+🔹 𝐂𝐫𝐨𝐬𝐬 𝐕𝐚𝐥𝐢𝐝𝐚𝐭𝐢𝐨𝐧:
+
+    📌A powerful technique to know how well a dataset works with a particular model.
+    📌Helps identify which model performs more accurately for a given dataset.
+𝐊-𝐅𝐨𝐥𝐝 𝐯𝐬. 𝐒𝐭𝐫𝐚𝐭𝐢𝐟𝐢𝐞𝐝 𝐊-𝐅𝐨𝐥𝐝 𝐢𝐧 𝐂𝐫𝐨𝐬𝐬-𝐕𝐚𝐥𝐢𝐝𝐚𝐭𝐢𝐨𝐧 📊
+
+    When evaluating machine learning models, K-Fold Cross-Validation randomly splits data into K subsets. 
+    But here’s the problem: If the dataset is imbalanced, some folds might miss out on minority class examples, leading to unreliable model performance.
+
+    That’s where Stratified K-Fold comes in! 🚀 It ensures each fold has the same proportion of classes as the original dataset, 
+        making it a better choice for classification tasks, especially when dealing with imbalanced data.
+
+ 💡 Tip: If you're using cross_val_score() from Scikit-Learn, It automatically applies Stratified K-Fold for 
+        classification and K-Fold for regression, saving you time and effort.
+
+ 🔍 𝗡𝗼𝘁𝗲: For classification tasks, always prefer Stratified K-Fold to get more reliable model performance! ✅

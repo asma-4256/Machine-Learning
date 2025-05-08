@@ -1,0 +1,46 @@
+1. Genrative Adversarial Networks :
+  GAN's useful for generating new data samples that resemble existing data.
+    Generative Adversarial Networks (GANs) are a type of deep learning model used for generating new, realistic data similar to a given dataset.
+
+  💡 Core Idea:
+    GANs consist of two neural networks that compete against each other:
+
+    Generator (G):
+
+        Creates fake data from random noise.
+
+        Goal: Fool the discriminator into thinking fake data is real.
+
+    Discriminator (D):
+
+        Tries to distinguish between real data (from the dataset) and fake data (from the generator).
+
+        Goal: Correctly classify real vs. fake.
+
+    They train adversarially — as one improves, the other must get better too.
+
+  ⚙️ How GANs work (step-by-step):
+    Generator produces fake data.
+
+    Discriminator gets both real and fake data.
+
+    Discriminator outputs a probability of real vs. fake.
+
+Based on feedback, both models update:
+
+    Generator improves at producing realistic data.
+
+    Discriminator improves at detecting fakes.
+
+    Repeat until the generator becomes so good that the discriminator can no longer tell real from fake (50% guess).
+
+  🧠 Use Cases of GANs:
+    Image generation (e.g., DeepFake, faces, art)
+
+    Data augmentation
+
+    Image-to-image translation (e.g., sketches to photos)
+
+    Super-resolution (enhancing image quality)
+
+    Music and video generation

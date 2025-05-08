@@ -1,0 +1,79 @@
+📌 What are Optimization Algorithms?
+
+🔖They improve how Gradient Descent updates model parameters.
+🔖Help achieve faster convergence and avoid local minima.
+
+
+📌Common Optimization Algorithms:
+
+🔹 Gradient Descent – The fundamental optimization approach.
+🔹 Momentum – Uses past gradients to accelerate learning.
+🔹 AdaGrad – Adapts learning rate for each parameter.
+🔹 RMSprop – Addresses AdaGrad’s limitations by maintaining a moving average of squared gradients.
+🔹 Adam – Combines Momentum and RMSprop for efficient optimization.
+
+Loss Function in machine learning:
+
+🔹What is a Loss Function?
+
+    📌It measures the difference between the predicted values and the actual values in a machine learning model.
+    📌The goal is to minimize this loss to improve model accuracy.
+
+🔹Example:
+
+    Suppose we have input 𝑥 and output 𝑦. 
+    A simple loss function could be:
+            𝐿 ( 𝑦 , 𝑦^) = ( 𝑦 − 𝑦^) ^2
+ 
+        Here, 
+        y ( 𝑦 ) - is the actual value, 
+
+        y^ ( 𝑦^) - is the predicted value, and 𝐿 is the loss.
+
+
+Gradient Descent in machine learning
+
+📌What is Gradient Descent?
+
+    It’s an optimization algorithm used to minimize the loss function by iteratively updating the model’s parameters (weights and biases).
+
+📌How It Works?
+
+    Compute the gradient of the loss function.
+    Adjust the parameters in the opposite direction of the gradient.
+    Repeat the process until the loss is minimized.
+
+**Hyperparameter in Gradient Descent optimization – 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐑𝐚𝐭𝐞!
+
+
+📌What is Learning Rate (α)?
+
+    📎It controls how much the model’s parameters are updated in each step of Gradient Descent.
+    📎A small learning rate results in slow convergence.
+    📎A large learning rate may overshoot the minimum or cause instability.
+
+
+📌Choosing the Right Learning Rate:
+
+    📎Too small → Takes too long to converge.
+    📎Too large → May never converge and oscillate.
+    📎Optimal learning rate → Balances speed and stability.
+
+**Types of Gradient Descent in machine learning!
+
+    📌Batch Gradient Descent:
+
+        Uses the entire dataset to compute gradients for each update.
+        More stable but computationally expensive for large datasets.
+
+
+    📌Stochastic Gradient Descent (SGD):
+
+        Updates parameters using one data point at a time.
+        Faster but introduces noise, leading to more fluctuations.
+
+
+    📌Mini-Batch Gradient Descent:
+
+        Uses small batches of data for updates.
+        Balances efficiency and stability, making it widely used in deep learning.
